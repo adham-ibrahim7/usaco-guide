@@ -109,7 +109,7 @@ const MarkCompleteButton = ({
             type="button"
             className={`inline-flex justify-center w-full rounded-md border border-gray-300 dark:border-gray-800 pr-4 ${
               state === 'Not Started' ? 'pl-4' : 'pl-3'
-            } py-2 bg-white dark:bg-gray-900 text-sm leading-5 font-medium text-gray-700 dark:text-dark-high-emphasis hover:text-gray-500 dark-hover:text-dark-high-emphasis focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150`}
+            } py-2 bg-white dark:bg-gray-900 text-sm leading-5 font-medium text-gray-700 dark:text-dark-high-emphasis hover:text-gray-500 dark-hover:text-dark-high-emphasis focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition ease-in-out duration-150`}
             id="options-menu"
             aria-haspopup="true"
             aria-expanded="true"
@@ -153,7 +153,7 @@ const MarkCompleteButton = ({
               : 'origin-top-right'
           } right-0 absolute z-10 mt-2 w-36 rounded-md shadow-lg`}
         >
-          <div className="rounded-md bg-white shadow-xs">
+          <div className="rounded-md bg-white ring-1 ring-black ring-opacity-5">
             <div
               className="py-1"
               role="menu"

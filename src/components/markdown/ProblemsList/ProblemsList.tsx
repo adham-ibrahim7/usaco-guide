@@ -39,7 +39,7 @@ export function ProblemsList(props: ProblemsListProps) {
                   <th className="pl-4 md:pl-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider">
                     Source
                   </th>
-                  <th className="pl-4 sm:pl-10 md:pl-12 md:pr-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
+                  <th className="pl-4 sm:pl-10 md:pl-12 md:pr-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-nowrap">
                     Problem Name
                   </th>
                   <th
@@ -199,7 +199,7 @@ export function ProblemComponent(props: ProblemComponentProps) {
   // }, []);
   // return (
   //   <StyledProblemRow id={id} isActive={isActive}>
-  //     <td className="pl-4 md:pl-6 whitespace-no-wrap text-sm font-medium">
+  //     <td className="pl-4 md:pl-6 whitespace-nowrap text-sm font-medium">
   //       <div
   //         style={{ height: '1.25rem' }}
   //         className="flex items-center justify-center"
@@ -207,7 +207,7 @@ export function ProblemComponent(props: ProblemComponentProps) {
   //         <ProblemStatusCheckbox problem={problem} />
   //       </div>
   //     </td>
-  //     <td className="pl-4 md:pl-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium">
+  //     <td className="pl-4 md:pl-6 py-4 whitespace-nowrap text-sm leading-5 font-medium">
   //       {problem.tooltipHoverDescription ? (
   //         <TextTooltip content={problem.tooltipHoverDescription}>
   //           {problem.source}
@@ -216,7 +216,7 @@ export function ProblemComponent(props: ProblemComponentProps) {
   //         problem.source
   //       )}
   //     </td>
-  //     <td className="pl-4 md:px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium">
+  //     <td className="pl-4 md:px-6 py-4 whitespace-nowrap text-sm leading-5 font-medium">
   //       <div className="flex items-center">
   //         {problem.starred && (
   //           <Tooltip content="We highly recommend you do all starred problems!">
@@ -243,7 +243,7 @@ export function ProblemComponent(props: ProblemComponentProps) {
   //       </div>
   //     </td>
   //     <td
-  //       className={`pl-4 md:pl-6 py-4 whitespace-no-wrap leading-5 ${
+  //       className={`pl-4 md:pl-6 py-4 whitespace-nowrap leading-5 ${
   //         !showSols ? 'pr-4 md:pr-6' : ''
   //       }`}
   //     >
@@ -259,7 +259,7 @@ export function ProblemComponent(props: ProblemComponentProps) {
   //       )}
   //     </td>
   //     {showSols && !alwaysHideTags && (
-  //       <td className="pl-4 md:pl-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium">
+  //       <td className="pl-4 md:pl-6 py-4 whitespace-nowrap text-sm leading-5 font-medium">
   //         {problem.tags && problem.tags.length ? (
   //           <details className="text-gray-500 dark:text-dark-med-emphasis">
   //             <summary>Show Tags</summary>
@@ -281,7 +281,7 @@ export function ProblemComponent(props: ProblemComponentProps) {
 const ProblemSolutionCell = (props: ProblemComponentProps) => {
   // const { problem } = props;
   // return (
-  //   <td className="pl-4 md:pl-6 pr-4 md:pr-6 py-4 whitespace-no-wrap text-sm font-medium leading-none">
+  //   <td className="pl-4 md:pl-6 pr-4 md:pr-6 py-4 whitespace-nowrap text-sm font-medium leading-none">
   //     {/* {sol} */}
   //     {/* {/^[a-zA-Z\-0-9]+$/.test(problem.sketch) && "OK"} */}
   //     {/* {!/^[a-zA-Z\-0-9]+$/.test(problem.sketch) && "NOT OK"} */}

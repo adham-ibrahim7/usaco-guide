@@ -96,7 +96,7 @@ export default function ConfirmationModal({
                     className={
                       (disabled
                         ? 'bg-gray-200 dark:bg-gray-500'
-                        : 'bg-white dark:bg-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue') +
+                        : 'bg-white dark:bg-gray-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500') +
                       ' inline-flex justify-center w-full rounded-md border border-gray-300 dark:border-gray-700 px-4 py-2 text-base leading-6 font-medium text-gray-700 dark:text-gray-300 shadow-sm transition ease-in-out duration-150 sm:text-sm sm:leading-5'
                     }
                   >

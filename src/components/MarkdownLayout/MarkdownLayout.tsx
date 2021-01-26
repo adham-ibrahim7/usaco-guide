@@ -83,7 +83,7 @@ const Breadcrumbs = () => {
           clipRule="evenodd"
         />
       </svg>
-      <span className="whitespace-no-wrap">{module.title}</span>
+      <span className="whitespace-nowrap">{module.title}</span>
     </nav>
   );
 };
@@ -518,7 +518,7 @@ export default function MarkdownLayout({
                             <button
                               type="button"
                               onClick={() => signIn()}
-                              className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-dark-high-emphasis bg-white dark:bg-gray-800 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150"
+                              className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-dark-high-emphasis bg-white dark:bg-gray-800 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150"
                             >
                               Sign in
                             </button>

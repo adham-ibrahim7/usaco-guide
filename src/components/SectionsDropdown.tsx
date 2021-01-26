@@ -67,7 +67,7 @@ export default function SectionsDropdown({
         >
           <div className="origin-top-left absolute z-20 left-0 mt-2 w-56 -ml-4">
             <div className="rounded-lg bg-white shadow-lg">
-              <div className="rounded-lg shadow-xs overflow-hidden">
+              <div className="rounded-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div
                   className="py-1"
                   role="menu"

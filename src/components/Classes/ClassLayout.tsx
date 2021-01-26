@@ -184,7 +184,7 @@ export default function ClassLayout({
                                 setShowEditClass(true);
                               }}
                               className={
-                                'w-full inline-flex items-center justify-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-900 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150'
+                                'w-full inline-flex items-center justify-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150'
                               }
                             >
                               Edit Class Details
@@ -228,7 +228,7 @@ export default function ClassLayout({
                                 'w-full inline-flex items-center justify-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-gray-300 ' +
                                 (creatingAnnouncement
                                   ? 'bg-gray-300 dark:bg-gray-600'
-                                  : 'bg-white dark:bg-gray-900 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150')
+                                  : 'bg-white dark:bg-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150')
                               }
                             >
                               {creatingAnnouncement
@@ -273,7 +273,7 @@ export default function ClassLayout({
                                 'w-full inline-flex items-center justify-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-gray-300 ' +
                                 (creatingAssignment
                                   ? 'bg-gray-300 dark:bg-gray-600'
-                                  : 'bg-white dark:bg-gray-900 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150')
+                                  : 'bg-white dark:bg-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150')
                               }
                             >
                               {creatingAssignment
@@ -397,7 +397,7 @@ export default function ClassLayout({
                                 <span className="inline-flex rounded-md shadow-sm">
                                   <button
                                     type="button"
-                                    className="inline-flex items-center px-3 py-2 border border-gray-300 text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150"
+                                    className="inline-flex items-center px-3 py-2 border border-gray-300 text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150"
                                     onClick={() => refreshStudentNames()}
                                   >
                                     Refresh Names
@@ -461,7 +461,7 @@ export default function ClassLayout({
                         <button
                           type="button"
                           onClick={() => setShowMembersModal(false)}
-                          className="inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-base leading-6 font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150 sm:text-sm sm:leading-5"
+                          className="inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-base leading-6 font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition ease-in-out duration-150 sm:text-sm sm:leading-5"
                         >
                           Close
                         </button>
@@ -581,7 +581,7 @@ export default function ClassLayout({
                         <button
                           onClick={() => setShowEditClass(false)}
                           type="button"
-                          className="bg-white inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-base leading-6 font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150 sm:text-sm sm:leading-5"
+                          className="bg-white inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-base leading-6 font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition ease-in-out duration-150 sm:text-sm sm:leading-5"
                         >
                           Cancel
                         </button>

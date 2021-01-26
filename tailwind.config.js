@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   theme: {
@@ -11,6 +12,7 @@ module.exports = {
         'dark-high-emphasis': 'rgba(255,255,255,0.87)',
         'dark-med-emphasis': 'rgba(255, 255, 255, 0.60)',
         'dark-disabled-emphasis': 'rgba(255, 255, 255, 0.38)',
+        teal: colors.emerald,
       },
     },
   },

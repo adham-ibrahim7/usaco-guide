@@ -239,7 +239,7 @@ export default function Template(props) {
     </Layout>
   );
 }
-export const pageQuery = graphql`
+export const query = graphql`
   query {
     modules: allMdx(filter: { fileAbsolutePath: { regex: "/content/" } }) {
       edges {

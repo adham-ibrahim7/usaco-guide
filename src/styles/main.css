@@ -48,6 +48,10 @@
     }
   }
 
+  .form-input {
+    @apply border-gray-300 rounded-md focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50;
+  }
+
   /* Additional vertical padding used by kbd tag. */
   .py-05 {
     padding-top: 0.125rem;

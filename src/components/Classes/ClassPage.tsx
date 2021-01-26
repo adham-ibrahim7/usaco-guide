@@ -84,7 +84,7 @@ export default function ClassPage(props: { path: string }): ReactElement {
               {/*<div className="relative">*/}
               {/*<span className="rounded-md shadow-sm">*/}
               {/*  <button id="sort-menu" type="button"*/}
-              {/*          className="inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"*/}
+              {/*          className="inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"*/}
               {/*          aria-haspopup="true" aria-expanded="false">*/}
               {/*    /!* Heroicon name: sort-ascending *!/*/}
               {/*    <svg className="mr-3 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">*/}
@@ -101,7 +101,7 @@ export default function ClassPage(props: { path: string }): ReactElement {
               {/*  </button>*/}
               {/*</span>*/}
               {/*  <div className="origin-top-right z-10 absolute right-0 mt-2 w-56 rounded-md shadow-lg">*/}
-              {/*    <div className="rounded-md bg-white shadow-xs">*/}
+              {/*    <div className="rounded-md bg-white ring-1 ring-black ring-opacity-5">*/}
               {/*      <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="sort-menu">*/}
               {/*        <a href="/"*/}
               {/*           className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"*/}

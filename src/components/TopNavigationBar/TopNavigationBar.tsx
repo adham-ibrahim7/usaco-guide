@@ -96,7 +96,7 @@ const ModuleSearch = ({ hits, currentRefinement, refine }) => {
         </div>
         <input
           id="search"
-          className="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md leading-5 bg-white dark:bg-gray-800 placeholder-gray-500 dark:placeholder-dark-high-emphasis focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm transition duration-150 ease-in-out text-black dark:text-white"
+          className="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md leading-5 bg-white dark:bg-gray-800 placeholder-gray-500 dark:placeholder-dark-high-emphasis focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:text-sm transition duration-150 ease-in-out text-black dark:text-white"
           placeholder="Search"
           type="search"
           value={currentRefinement}
@@ -407,7 +407,7 @@ export default function TopNavigationBar({
                   {/*    />*/}
                   {/*  </button>*/}
                   {/*) : (*/}
-                  {/*  <UserAuthButton className="relative inline-flex items-center px-2 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-gray-500 hover:text-gray-700 dark:text-dark-high-emphasis focus:outline-none focus:shadow-outline-blue transition ease-in-out duration-150" />*/}
+                  {/*  <UserAuthButton className="relative inline-flex items-center px-2 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-gray-500 hover:text-gray-700 dark:text-dark-high-emphasis focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition ease-in-out duration-150" />*/}
                   {/*)}*/}
                 </div>
                 <Transition
@@ -421,7 +421,7 @@ export default function TopNavigationBar({
                 >
                   <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
                     <div
-                      className="py-1 rounded-md bg-white shadow-xs"
+                      className="py-1 rounded-md bg-white ring-1 ring-black ring-opacity-5"
                       role="menu"
                       aria-orientation="vertical"
                       aria-labelledby="user-menu"

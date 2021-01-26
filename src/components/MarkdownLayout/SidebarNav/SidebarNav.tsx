@@ -47,7 +47,7 @@ export const SidebarNav = () => {
           />
         </div>
         {/*<select*/}
-        {/*  className="mt-1 form-select block w-full pl-4 pr-10 py-2 text-base leading-6 border-gray-300 rounded-none border-0 border-t border-b focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"*/}
+        {/*  className="mt-1 form-select block w-full pl-4 pr-10 py-2 text-base leading-6 border-gray-300 rounded-none border-0 border-t border-b focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:border-blue-300 sm:text-sm sm:leading-5"*/}
         {/*  onChange={e => setActiveSection(e.target.value)}*/}
         {/*>*/}
         {/*  {SECTIONS.map(s => (*/}

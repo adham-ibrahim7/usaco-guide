@@ -49,7 +49,7 @@ export default function Template(props) {
   );
 }
 
-export const pageQuery = graphql`
+export const query = graphql`
   query($id: String!) {
     mdx(frontmatter: { id: { eq: $id } }) {
       body
