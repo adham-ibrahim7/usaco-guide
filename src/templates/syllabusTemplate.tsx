@@ -17,41 +17,7 @@ import UserDataContext from '../context/UserDataContext/UserDataContext';
 import getProgressInfo from '../utils/getProgressInfo';
 import ModuleLink from '../components/Dashboard/ModuleLink';
 import { ModuleLinkInfo } from '../models/module';
-
-// const DottedLineContainer = styled.div`
-//   ${tw`space-y-6 relative`}
-//
-//   @media (min-width: 768px) {
-//     &::before {
-//       content: '';
-//       position: absolute;
-//       width: 2px;
-//       display: block;
-//       left: calc(50% - 1px);
-//       top: 0;
-//       bottom: 0;
-//       border-right: 2px dashed;
-//       ${tw`border-gray-100`}
-//     }
-//     .mode-dark &::before {
-//       ${tw`border-gray-700`}
-//     }
-//   }
-// `;
-//
-// const SectionContainer = styled.div`
-//   ${tw`flex flex-col md:flex-row`}
-//
-//   &:hover h2 {
-//     ${tw`text-gray-600`}
-//   }
-//   .mode-dark &:hover h2 {
-//     ${tw`text-gray-300`}
-//   }
-//   &:hover h2 + p {
-//     ${tw`text-gray-500`}
-//   }
-// `;
+import styles from './syllabusTemplate.module.css';
 
 const HeroBGColor: { [key in SectionID]: string } = {
   general: 'bg-blue-600 dark:bg-blue-900',
@@ -110,6 +76,7 @@ const SECTION_DESCRIPTION: { [key in SectionID]: React.ReactNode } = {
 };
 
 export default function Template(props) {
+  console.log(styles);
   const data = props.data;
 
   const allModules = data.modules.edges.reduce((acc, cur) => {
@@ -203,37 +170,41 @@ export default function Template(props) {
               </div>
             </div>
           </div>
-          {/*<DottedLineContainer className="py-12 px-4 max-w-screen-xl mx-auto">*/}
-          {/*  {section.map(category => (*/}
-          {/*    <SectionContainer key={category.name}>*/}
-          {/*      <div className="flex-1 md:text-right pr-12 group">*/}
-          {/*        <h2 className="text-2xl font-semibold leading-6 py-3 text-gray-500 dark:text-dark-med-emphasis group-hover:text-gray-800 dark-group-hover:text-dark-high-emphasis transition duration-150 ease-in-out">*/}
-          {/*          {category.name}*/}
-          {/*        </h2>*/}
-          {/*        <p className="md:max-w-sm md:ml-auto text-gray-400 dark:text-gray-500 dark-group-hover:text-dark-med-emphasis group-hover:text-gray-600 transition duration-150 ease-in-out">*/}
-          {/*          {category.description}*/}
-          {/*        </p>*/}
-          {/*      </div>*/}
-          {/*      <div className="flex-1 pl-12">*/}
-          {/*        {category.items.map(item => (*/}
-          {/*          <ModuleLink*/}
-          {/*            key={item.frontmatter.id}*/}
-          {/*            link={*/}
-          {/*              new ModuleLinkInfo(*/}
-          {/*                item.frontmatter.id,*/}
-          {/*                moduleIDToSectionMap[item.frontmatter.id],*/}
-          {/*                item.frontmatter.title,*/}
-          {/*                item.frontmatter.description,*/}
-          {/*                item.frontmatter.frequency,*/}
-          {/*                item.isIncomplete*/}
-          {/*              )*/}
-          {/*            }*/}
-          {/*          />*/}
-          {/*        ))}*/}
-          {/*      </div>*/}
-          {/*    </SectionContainer>*/}
-          {/*  ))}*/}
-          {/*</DottedLineContainer>*/}
+          <div
+            className={
+              styles.dottedLineContainer + ' py-12 px-4 max-w-screen-xl mx-auto'
+            }
+          >
+            {section.map(category => (
+              <div className={styles.sectionContainer} key={category.name}>
+                <div className="flex-1 md:text-right pr-12 group">
+                  <h2 className="text-2xl font-semibold leading-6 py-3 text-gray-500 dark:text-dark-med-emphasis group-hover:text-gray-800 dark-group-hover:text-dark-high-emphasis transition duration-150 ease-in-out">
+                    {category.name}
+                  </h2>
+                  <p className="md:max-w-sm md:ml-auto text-gray-400 dark:text-gray-500 dark-group-hover:text-dark-med-emphasis group-hover:text-gray-600 transition duration-150 ease-in-out">
+                    {category.description}
+                  </p>
+                </div>
+                <div className="flex-1 pl-12">
+                  {category.items.map(item => (
+                    <ModuleLink
+                      key={item.frontmatter.id}
+                      link={
+                        new ModuleLinkInfo(
+                          item.frontmatter.id,
+                          moduleIDToSectionMap[item.frontmatter.id],
+                          item.frontmatter.title,
+                          item.frontmatter.description,
+                          item.frontmatter.frequency,
+                          item.isIncomplete
+                        )
+                      }
+                    />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </main>
       </div>
     </Layout>

@@ -98,7 +98,9 @@ export const plugins = [
     resolve: `gatsby-plugin-postcss`,
     options: {
       postCssPlugins: [
+        require('postcss-import'),
         require(`tailwindcss`),
+        require('postcss-nested'),
         require(`autoprefixer`),
         ...(process.env.NODE_ENV === `production` ? [require(`cssnano`)] : []),
       ],

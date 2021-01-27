@@ -37,10 +37,10 @@ import UserDataContext from '../../../context/UserDataContext/UserDataContext';
 //
 //   // Really weird bug: Single ampersand breaks stuff; double ampersand works
 //   // This might be a styled-component issue?????
-//   .mode-dark &&::after {
+//   .dark &&::after {
 //     ${props => props.darkDotColorStyle};
 //   }
-//   .mode-dark &&::before {
+//   .dark &&::before {
 //     ${props => props.darkLineColorStyle};
 //   }
 //
@@ -57,7 +57,7 @@ import UserDataContext from '../../../context/UserDataContext/UserDataContext';
 //   ${tw`focus:outline-none transition ease-in-out duration-150 hover:text-blue-700 hover:bg-blue-50 focus:bg-blue-100 flex items-center pl-12 pr-4 py-3 text-sm leading-5`}
 //
 //   ${({ $textStyle }) => $textStyle}
-//   .mode-dark && {
+//   .dark && {
 //     ${tw`hover:bg-gray-900 hover:text-dark-high-emphasis focus:bg-gray-800`}
 //     ${({ $darkTextStyle }) => $darkTextStyle}
 //   }
@@ -85,7 +85,7 @@ import UserDataContext from '../../../context/UserDataContext/UserDataContext';
 //     }
 //   }
 //
-//   .mode-dark &:hover {
+//   .dark &:hover {
 //     &::before {
 //       ${tw`bg-gray-400`}
 //     }

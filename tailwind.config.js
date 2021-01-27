@@ -2,6 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -23,7 +24,7 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
   ],
   purge: {
-    safelist: ['mode-dark'],
+    safelist: ['dark'],
     content: [
       './src/**/*.js',
       './src/**/*.ts',

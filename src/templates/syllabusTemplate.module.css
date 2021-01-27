@@ -1,0 +1,38 @@
+.dottedLineContainer {
+    @apply relative space-y-6;
+
+    @media (min-width: 768px) {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            display: block;
+            left: calc(50% - 1px);
+            top: 0;
+            bottom: 0;
+            border-right: 2px dashed;
+            @apply border-gray-100;
+
+            :global(.dark) & {
+                @apply border-gray-700;
+            }
+        }
+    }
+}
+
+.sectionContainer {
+    @apply flex flex-col md:flex-row;
+
+    &:hover h2 {
+        @apply text-gray-600;
+        :global(.dark) & {
+            @apply text-gray-300;
+        }
+    }
+    &:hover h2 + p {
+        @apply text-gray-500;
+        :global(.dark) & {
+            @apply text-gray-400;
+        }
+    }
+}

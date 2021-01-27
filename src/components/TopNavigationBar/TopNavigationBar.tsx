@@ -35,7 +35,7 @@ import SettingsModal from '../SettingsModal';
 //     ${tw`text-sm!`}
 //   }
 //
-//   .mode-dark & > p > .ais-Highlight > * {
+//   .dark & > p > .ais-Highlight > * {
 //     ${tw`text-gray-300`}
 //   }
 //
@@ -48,11 +48,11 @@ import SettingsModal from '../SettingsModal';
 // const SearchResultsContainer = styled.div`
 //   ${tw`absolute z-10 bg-white lg:rounded shadow-md lg:border lg:border-gray-400 z-10 mt-3 inset-x-0 lg:left-auto lg:w-screen lg:max-w-3xl`}
 //
-//   .mode-dark & {
+//   .dark & {
 //     ${tw`bg-dark-surface lg:border-gray-700`}
 //   }
 //
-//   .mode-dark & .ais-PoweredBy {
+//   .dark & .ais-PoweredBy {
 //     ${tw`text-dark-high-emphasis!`}
 //   }
 // `;

@@ -21,78 +21,78 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  // const { createPage } = actions;
-  // const result = await graphql(`
-  //   query {
-  //     modules: allMdx(filter: { fileAbsolutePath: { regex: "/content/" } }) {
-  //       edges {
-  //         node {
-  //           frontmatter {
-  //             id
-  //           }
-  //           fields {
-  //             division
-  //           }
-  //         }
-  //       }
-  //     }
-  //
-  //     solutions: allMdx(
-  //       filter: { fileAbsolutePath: { regex: "/solutions/" } }
-  //     ) {
-  //       edges {
-  //         node {
-  //           frontmatter {
-  //             title
-  //             id
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
-  // if (result.errors) {
-  //   reporter.panicOnBuild('🚨 ERROR: Loading "createPages" query');
-  // }
-  // const moduleTemplate = require.resolve(`./src/templates/moduleTemplate.tsx`);
-  // const modules = result.data.modules.edges;
-  // modules.forEach(({ node }) => {
-  //   if (!node.fields?.division) return;
-  //   createPage({
-  //     path: `/${node.fields.division}/${node.frontmatter.id}`,
-  //     component: moduleTemplate,
-  //     context: {
-  //       id: node.frontmatter.id,
-  //     },
-  //   });
-  // });
-  // const solutionTemplate = require.resolve(
-  //   `./src/templates/solutionTemplate.tsx`
-  // );
-  // const solutions = result.data.solutions.edges;
-  // solutions.forEach(({ node }) => {
-  //   createPage({
-  //     path: `/solutions/${node.frontmatter.id}`,
-  //     component: solutionTemplate,
-  //     context: {
-  //       id: node.frontmatter.id,
-  //     },
-  //   });
-  // });
-  //
-  // // Generate Syllabus Pages //
-  // const syllabusTemplate = require.resolve(
-  //   `./src/templates/syllabusTemplate.tsx`
-  // );
-  // SECTIONS.forEach(division => {
-  //   createPage({
-  //     path: `/${division}`,
-  //     component: syllabusTemplate,
-  //     context: {
-  //       division: division,
-  //     },
-  //   });
-  // });
+  const { createPage } = actions;
+  const result = await graphql(`
+    query {
+      modules: allMdx(filter: { fileAbsolutePath: { regex: "/content/" } }) {
+        edges {
+          node {
+            frontmatter {
+              id
+            }
+            fields {
+              division
+            }
+          }
+        }
+      }
+
+      solutions: allMdx(
+        filter: { fileAbsolutePath: { regex: "/solutions/" } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              id
+            }
+          }
+        }
+      }
+    }
+  `);
+  if (result.errors) {
+    reporter.panicOnBuild('🚨 ERROR: Loading "createPages" query');
+  }
+  const moduleTemplate = require.resolve(`./src/templates/moduleTemplate.tsx`);
+  const modules = result.data.modules.edges;
+  modules.forEach(({ node }) => {
+    if (!node.fields?.division) return;
+    createPage({
+      path: `/${node.fields.division}/${node.frontmatter.id}`,
+      component: moduleTemplate,
+      context: {
+        id: node.frontmatter.id,
+      },
+    });
+  });
+  const solutionTemplate = require.resolve(
+    `./src/templates/solutionTemplate.tsx`
+  );
+  const solutions = result.data.solutions.edges;
+  solutions.forEach(({ node }) => {
+    createPage({
+      path: `/solutions/${node.frontmatter.id}`,
+      component: solutionTemplate,
+      context: {
+        id: node.frontmatter.id,
+      },
+    });
+  });
+
+  // Generate Syllabus Pages //
+  const syllabusTemplate = require.resolve(
+    `./src/templates/syllabusTemplate.tsx`
+  );
+  SECTIONS.forEach(division => {
+    createPage({
+      path: `/${division}`,
+      component: syllabusTemplate,
+      context: {
+        division: division,
+      },
+    });
+  });
   // End Generate Syllabus Pages //
 };
 

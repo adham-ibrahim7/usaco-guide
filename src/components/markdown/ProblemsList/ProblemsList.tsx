@@ -175,7 +175,7 @@ export const difficultyClasses = {
 //     isActive
 //       ? css`
 //           background-color: #fdfdea !important;
-//           .mode-dark && {
+//           .dark && {
 //             background-color: #3c3c00 !important;
 //           }
 //         `
@@ -185,7 +185,7 @@ export const difficultyClasses = {
 // const Anchor = styled.a`
 //   ${tw`text-blue-600 font-semibold`}
 //
-//   .mode-dark && {
+//   .dark && {
 //     color: #a9c5ea;
 //   }
 // `;

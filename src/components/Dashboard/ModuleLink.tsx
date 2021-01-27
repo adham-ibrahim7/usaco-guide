@@ -37,7 +37,7 @@ import { LinkWithProgress as SidebarLinkWithProgress } from '../MarkdownLayout/S
 //     ${({ small }) => small && tw`border-2 border-gray-200 bg-white`}
 //   }
 //   // lol no clue why two ampersands are needed but they are...
-//   .mode-dark &&::after {
+//   .dark &&::after {
 //     ${({ small }) => (small ? tw`border-2 border-gray-500` : tw`border-0`)}
 //   }
 //
@@ -77,7 +77,7 @@ import { LinkWithProgress as SidebarLinkWithProgress } from '../MarkdownLayout/S
 //       ${tw`bg-blue-600`}
 //     }
 //   }
-//   .mode-dark &:hover {
+//   .dark &:hover {
 //     &::before {
 //       ${tw`bg-gray-400`}
 //     }
@@ -219,6 +219,7 @@ const ModuleLink = ({ link }: { link: ModuleLinkInfo }) => {
   //     </Link>
   //   </LinkWithProgress>
   // );
+  return null;
 };
 
 export default ModuleLink;

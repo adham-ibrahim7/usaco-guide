@@ -8,10 +8,10 @@
     background-color: white;
   }
 
-  html.mode-dark {
+  html.dark {
     min-height: 100vh;
-    background-color: color('dark-surface');
-    color: color('dark-high-emphasis');
+    background-color: theme('colors.dark-surface');
+    color: theme('colors.dark-high-emphasis');
   }
 
   html.transitioning-color-scheme,
@@ -38,11 +38,11 @@
       border: 2px solid theme('colors.gray.200');
     }
 
-    .mode-dark ::-webkit-scrollbar {
+    .dark ::-webkit-scrollbar {
       background-color: theme('colors.gray.800');
     }
 
-    .mode-dark ::-webkit-scrollbar-thumb {
+    .dark ::-webkit-scrollbar-thumb {
       border: 2px solid theme('colors.gray.800');
       background-color: theme('colors.gray.400');
     }
@@ -78,7 +78,7 @@
     @apply text-blue-600 font-semibold;
   }
 
-  .mode-dark .markdown a {
+  .dark .markdown a {
     color: #a9c5ea;
   }
 
@@ -99,9 +99,9 @@
     @apply text-base border-l-4 border-gray-300 pl-4 pr-4 text-gray-600;
   }
 
-  .mode-dark .markdown blockquote {
-    color: color('dark-high-emphasis');
-    border: color('dark-med-emphasis');
+  .dark .markdown blockquote {
+    color: theme('colors.dark-high-emphasis');
+    border: theme('colors.dark-med-emphasis');
   }
 
   .markdown code.inline {
@@ -183,7 +183,7 @@
     @apply text-blue-600 font-semibold mr-2;
   }
 
-  .mode-dark .markdown ol li:before {
+  .dark .markdown ol li:before {
     @apply text-blue-300;
   }
 
@@ -229,7 +229,7 @@
     @apply bg-gray-50;
   }
 
-  .mode-dark .table-alternating-stripes tr:nth-child(even) {
+  .dark .table-alternating-stripes tr:nth-child(even) {
     background-color: #1c2538;
   }
 
