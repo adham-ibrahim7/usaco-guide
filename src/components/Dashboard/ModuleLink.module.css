@@ -1,0 +1,78 @@
+.linkWithProgress {
+
+}
+// const LinkWithProgress = styled(SidebarLinkWithProgress)`
+//   &::after {
+//     ${({ small }) => css`
+//       // prettier-ignore
+//       left: calc(-1.75rem - ${small
+//         ? '8px'
+//         : '10px'}); // -(3rem padding plus half of width)
+//       // prettier-ignore
+//       top: calc(1.5rem - ${small
+//         ? '8px'
+//         : '10px'}); // half of (1.5 + 1.5padding) rem minus half of height
+//       height: ${small ? '16px' : '20px'};
+//       width: ${small ? '16px' : '20px'};
+//     `}
+//
+//     @media (min-width: 768px) {
+//       ${({ small }) => css`
+//         // prettier-ignore
+//         left: calc(-3rem - ${small
+//           ? '8px'
+//           : '10px'}); // -(3rem padding plus half of width)
+//       `}
+//     }
+//   }
+//
+//   &::after {
+//     ${({ small }) => small && tw`border-2 border-gray-200 bg-white`}
+//   }
+//   // lol no clue why two ampersands are needed but they are...
+//   .dark &&::after {
+//     ${({ small }) => (small ? tw`border-2 border-gray-500` : tw`border-0`)}
+//   }
+//
+//   &::before {
+//     left: calc(-1.75rem - 1px);
+//     @media (min-width: 768px) {
+//       left: calc(-3rem - 1px); // -(3rem padding plus half of width)
+//     }
+//   }
+// `;
+//
+// const StyledLink = styled.div`
+//   ${tw`focus:outline-none transition ease-in-out duration-150 text-gray-800 hover:text-blue-700 text-xl leading-6 py-3`}
+//
+//   &::before {
+//     content: '';
+//     left: calc(-1.75rem - 11px);
+//     @media (min-width: 768px) {
+//       left: calc(-3rem - 11px); // -(3rem padding plus half of width)
+//     }
+//     top: calc(1.5rem - 11px); // half of 1.5rem minus half of height
+//     height: 22px;
+//     width: 22px;
+//     position: absolute;
+//     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+//   }
+//
+//   &::before {
+//     transform: ${({ showDot }) => (showDot ? 'scale(1)' : 'scale(0.1)')};
+//     border-radius: 100%;
+//     z-index: 1;
+//   }
+//
+//   &:hover {
+//     &::before {
+//       transform: scale(1);
+//       ${tw`bg-blue-600`}
+//     }
+//   }
+//   .dark &:hover {
+//     &::before {
+//       ${tw`bg-gray-400`}
+//     }
+//   }
+// `;

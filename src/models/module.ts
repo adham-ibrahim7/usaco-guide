@@ -50,7 +50,7 @@ export class ModuleInfo extends ModuleLinkInfo {
   }
 }
 
-export type ModuleProgress =
+export type `ModuleProgress =
   | 'Not Started'
   | 'Reading'
   | 'Practicing'
