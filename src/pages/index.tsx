@@ -76,7 +76,7 @@ export default function IndexPage(props: PageProps) {
                   <OutboundLink
                     href="https://github.com/cpinitiative/usaco-guide/?ref=top_badge"
                     target="_blank"
-                    className="text-sm font-semibold uppercase tracking-wide text-gray-500 hover:text-gray-400 dark:text-gray-400 dark-hover:text-gray-300 sm:text-base lg:text-sm xl:text-base transition duration-150 ease-in-out"
+                    className="text-sm font-semibold uppercase tracking-wide text-gray-500 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-300 sm:text-base lg:text-sm xl:text-base transition duration-150 ease-in-out"
                   >
                     Open Source!
                   </OutboundLink>
@@ -95,7 +95,7 @@ export default function IndexPage(props: PageProps) {
                   <div className="rounded-md shadow">
                     <Link
                       to="/dashboard/"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white dark:text-blue-50 bg-blue-600 dark:bg-blue-700 hover:bg-blue-500 dark-hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition md:py-4 md:text-lg md:px-10"
+                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white dark:text-blue-50 bg-blue-600 dark:bg-blue-700 hover:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition md:py-4 md:text-lg md:px-10"
                     >
                       View Guide
                     </Link>
@@ -110,7 +110,7 @@ export default function IndexPage(props: PageProps) {
                           behavior: 'smooth',
                         });
                       }}
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 dark:text-blue-200 bg-blue-100 dark:bg-blue-900 hover:text-blue-600 hover:bg-blue-50 dark-hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 dark:text-blue-200 bg-blue-100 dark:bg-blue-900 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                     >
                       Learn More
                     </a>
@@ -367,7 +367,7 @@ export default function IndexPage(props: PageProps) {
             <div className="rounded-md shadow">
               <Link
                 to="/dashboard/"
-                className="w-full flex items-center justify-center px-6 py-2 sm:px-8 sm:py-3 md:py-4 md:text-lg md:px-10 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 dark:bg-blue-800 hover:bg-blue-500 dark-hover:bg-blue-700 focus:outline-none focus:border-blue-700 dark-focus:border-blue-800 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+                className="w-full flex items-center justify-center px-6 py-2 sm:px-8 sm:py-3 md:py-4 md:text-lg md:px-10 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 dark:bg-blue-800 hover:bg-blue-500 dark:hover:bg-blue-700 focus:outline-none focus:border-blue-700 dark:focus:border-blue-800 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
               >
                 View Guide
               </Link>

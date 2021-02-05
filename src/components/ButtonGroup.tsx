@@ -19,7 +19,7 @@ export default function ButtonGroup({
     'relative inline-flex items-center px-4 py-2 border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-600 transition';
   const activeClasses = 'border-blue-600 bg-blue-600 text-white';
   const inactiveClasses =
-    'border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 hover:text-gray-500 dark-hover:text-gray-100 active:bg-gray-100 active:text-gray-700 focus:border-blue-600';
+    'border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 hover:text-gray-500 dark:hover:text-gray-100 active:bg-gray-100 active:text-gray-700 focus:border-blue-600';
 
   return (
     <span className="relative z-0 inline-flex shadow-sm rounded-md">

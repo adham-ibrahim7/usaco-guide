@@ -160,14 +160,14 @@ export default function ClassLayout({
                       <div className="flex items-center space-x-3">
                         <div className="space-y-1">
                           <Link to={`/class/${classId}`}>
-                            <h1 className="text-2xl leading-9 font-bold tracking-tight text-gray-900 dark:text-gray-100 hover:text-gray-600 dark-hover:text-gray-300">
+                            <h1 className="text-2xl leading-9 font-bold tracking-tight text-gray-900 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-300">
                               {data?.name}
                             </h1>
                           </Link>
                           <h2 className="text-small leading-3 font-medium tracking-tight text-gray-900 dark:text-gray-100">
                             {data?.date}
                           </h2>
-                          <h4 className="text-sm leading-9 text-gray-500 group-hover:text-gray-900 dark-group-hover:text-gray-100 font-medium">
+                          <h4 className="text-sm leading-9 text-gray-500 group-hover:text-gray-900 dark:group-hover:text-gray-100 font-medium">
                             {data?.instructorNames.join(', ')}
                           </h4>
                         </div>
@@ -325,7 +325,7 @@ export default function ClassLayout({
                             <span className="font-bold">Class Join Link:</span>{' '}
                             <a
                               className={
-                                'cursor-pointer text-blue-600 dark:text-blue-400 hover:underline active:text-blue-900 dark-active:text-blue-700'
+                                'cursor-pointer text-blue-600 dark:text-blue-400 hover:underline active:text-blue-900 dark:activeactive:text-blue-700'
                               }
                               onClick={e => {
                                 e.preventDefault();

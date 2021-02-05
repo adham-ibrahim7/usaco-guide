@@ -178,10 +178,10 @@ export default function Template(props) {
             {section.map(category => (
               <div className={styles.sectionContainer} key={category.name}>
                 <div className="flex-1 md:text-right pr-12 group">
-                  <h2 className="text-2xl font-semibold leading-6 py-3 text-gray-500 dark:text-dark-med-emphasis group-hover:text-gray-800 dark-group-hover:text-dark-high-emphasis transition duration-150 ease-in-out">
+                  <h2 className="text-2xl font-semibold leading-6 py-3 text-gray-500 dark:text-dark-med-emphasis group-hover:text-gray-800 dark:group-hover:text-dark-high-emphasis transition duration-150 ease-in-out">
                     {category.name}
                   </h2>
-                  <p className="md:max-w-sm md:ml-auto text-gray-400 dark:text-gray-500 dark-group-hover:text-dark-med-emphasis group-hover:text-gray-600 transition duration-150 ease-in-out">
+                  <p className="md:max-w-sm md:ml-auto text-gray-400 dark:text-gray-500 dark:group-hover:text-dark-med-emphasis group-hover:text-gray-600 transition duration-150 ease-in-out">
                     {category.description}
                   </p>
                 </div>

@@ -281,7 +281,7 @@ export default function PostPage(props: {
                       'inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-gray-300 ' +
                       (edit && hasChanges
                         ? 'bg-gray-300 dark:bg-gray-700'
-                        : 'bg-white dark:bg-gray-700 hover:text-gray-500 dark-hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:text-gray-800 dark-active:text-gray-100 active:bg-gray-50 dark-active:bg-gray-600 transition ease-in-out duration-150')
+                        : 'bg-white dark:bg-gray-700 hover:text-gray-500 dark:hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:text-gray-800 dark:activeactive:text-gray-100 active:bg-gray-50 dark:activeactive:bg-gray-600 transition ease-in-out duration-150')
                     }
                   >
                     {edit && hasChanges
@@ -305,7 +305,7 @@ export default function PostPage(props: {
                             setTitle(post.title);
                           }}
                           className={
-                            'inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:text-gray-500 dark-hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:text-gray-800 dark-active:text-gray-100 active:bg-gray-50 dark-active:bg-gray-600 transition ease-in-out duration-150'
+                            'inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:text-gray-500 dark:hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:text-gray-800 dark:activeactive:text-gray-100 active:bg-gray-50 dark:activeactive:bg-gray-600 transition ease-in-out duration-150'
                           }
                         >
                           Edit
@@ -362,7 +362,7 @@ export default function PostPage(props: {
                         }
                       }}
                       className={
-                        'inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:text-gray-500 dark-hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:text-gray-800 dark-active:text-gray-100 active:bg-gray-50 dark-active:bg-gray-600 transition ease-in-out duration-150'
+                        'inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:text-gray-500 dark:hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 active:text-gray-800 dark:activeactive:text-gray-100 active:bg-gray-50 dark:activeactive:bg-gray-600 transition ease-in-out duration-150'
                       }
                     >
                       {hasChanges ? 'Discard Changes' : 'Stop Editing'}

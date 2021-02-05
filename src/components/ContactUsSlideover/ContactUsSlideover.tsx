@@ -157,7 +157,7 @@ export default function ContactUsSlideover({
           <span className="inline-flex rounded-md shadow-sm">
             <button
               type="button"
-              className="py-2 px-4 border border-gray-300 dark:border-gray-700 rounded-md text-sm leading-5 font-medium text-gray-700 dark:text-dark-med-emphasis hover:text-gray-500 dark-hover:text-dark-high-emphasis focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+              className="py-2 px-4 border border-gray-300 dark:border-gray-700 rounded-md text-sm leading-5 font-medium text-gray-700 dark:text-dark-med-emphasis hover:text-gray-500 dark:hover:text-dark-high-emphasis focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
               onClick={onClose}
             >
               Cancel

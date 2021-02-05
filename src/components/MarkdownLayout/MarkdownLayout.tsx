@@ -33,7 +33,7 @@ const ForumBanner = () => {
   return (
     <div className="fixed bottom-0 right-0 m-4">
       <OutboundLink
-        className="block shadow-md hover:shadow-lg py-2 px-3 border border-gray-200 dark:border-gray-700 transform hover:-translate-y-2 hover:bg-gray-50 bg-white dark:bg-dark-surface dark-hover:bg-gray-900 transition duration-150 ease-in-out"
+        className="block shadow-md hover:shadow-lg py-2 px-3 border border-gray-200 dark:border-gray-700 transform hover:-translate-y-2 hover:bg-gray-50 bg-white dark:bg-dark-surface dark:hover:bg-gray-900 transition duration-150 ease-in-out"
         target="_blank"
         href="https://forum.usaco.guide/"
       >
@@ -51,7 +51,7 @@ const Breadcrumbs = () => {
     <nav className="flex flex-wrap items-center text-sm leading-loose font-medium text-gray-500 dark:text-dark-med-emphasis">
       <Link
         to="/dashboard/"
-        className="hover:text-gray-700 dark-hover:text-dark-high-emphasis transition duration-150 ease-in-out"
+        className="hover:text-gray-700 dark:hover:text-dark-high-emphasis transition duration-150 ease-in-out"
       >
         Home
       </Link>
@@ -68,7 +68,7 @@ const Breadcrumbs = () => {
       </svg>
       <Link
         to={`/${module.section}/`}
-        className="hover:text-gray-700 dark-hover:text-dark-high-emphasis transition duration-150 ease-in-out"
+        className="hover:text-gray-700 dark:hover:text-dark-high-emphasis transition duration-150 ease-in-out"
       >
         {SECTION_LABELS[module.section]}
       </Link>
@@ -93,11 +93,11 @@ const SidebarBottomButtons = ({ onContactUs, onOpenSettings }) => {
     <>
       <div className="flex-shrink-0 border-t border-gray-200 dark:border-gray-800 flex">
         <button
-          className="group flex-1 flex items-center p-4 text-sm leading-5 font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 dark:text-dark-med-emphasis dark-hover:text-dark-high-emphasis dark-focus:text-dark-high-emphasis dark-hover:bg-gray-900 dark-focus:bg-gray-900 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150"
+          className="group flex-1 flex items-center p-4 text-sm leading-5 font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 dark:text-dark-med-emphasis dark:hover:text-dark-high-emphasis dark:focus:text-dark-high-emphasis dark:hover:bg-gray-900 dark:focus:bg-gray-900 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150"
           onClick={onOpenSettings}
         >
           <svg
-            className="mr-4 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-500 dark:text-gray-500 dark-group-hover:text-gray-400 transition ease-in-out duration-150"
+            className="mr-4 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400 transition ease-in-out duration-150"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -121,11 +121,11 @@ const SidebarBottomButtons = ({ onContactUs, onOpenSettings }) => {
       </div>
       <div className="flex-shrink-0 border-t border-gray-200 dark:border-gray-800 flex">
         <button
-          className="group flex-1 flex items-center p-4 text-sm leading-5 font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 dark:text-dark-med-emphasis dark-hover:text-dark-high-emphasis dark-focus:text-dark-high-emphasis dark-hover:bg-gray-900 dark-focus:bg-gray-900 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150"
+          className="group flex-1 flex items-center p-4 text-sm leading-5 font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 dark:text-dark-med-emphasis dark:hover:text-dark-high-emphasis dark:focus:text-dark-high-emphasis dark:hover:bg-gray-900 dark:focus:bg-gray-900 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150"
           onClick={onContactUs}
         >
           <svg
-            className="mr-4 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-500 dark:text-gray-500 dark-group-hover:text-gray-400 transition ease-in-out duration-150"
+            className="mr-4 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400 transition ease-in-out duration-150"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -170,7 +170,7 @@ const NavBar = ({ alignNavButtonsRight = true }) => {
   const disabledClasses =
     'text-gray-200 pointer-events-none dark:text-dark-disabled-emphasis';
   const activeClasses =
-    'text-gray-500 hover:text-gray-800 dark:text-dark-med-emphasis dark-hover:text-dark-high-emphasis transition duration-150 ease-in-out';
+    'text-gray-500 hover:text-gray-800 dark:text-dark-med-emphasis dark:hover:text-dark-high-emphasis transition duration-150 ease-in-out';
   return (
     <div
       className={`flex ${
